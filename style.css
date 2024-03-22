@@ -1,0 +1,102 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.header-container{
+    display: grid;
+   grid-auto-flow: column;
+   grid-auto-columns: 1fr 3fr;
+}
+.header-container a{
+text-decoration: none;
+color: black;
+}
+.navigation{
+    display: grid;
+    align-items: center;
+    grid-auto-flow: column;
+    grid-auto-columns: 3fr 1fr;
+    
+}
+
+.navigation ul{
+    display: flex;
+}
+.navigation ul li{
+    padding: 10px 30px;
+    list-style: none;
+}
+
+.reg-auto{
+    display: flex;
+}
+.reg-auto a{
+    flex: 1;
+}
+.slide{
+    background-image: linear-gradient(rgba(4,9,30,0.7), rgba(4,9,30,0.7)), url(12.jpg);
+    height: 500px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position:relative ;
+}
+.slide h1{
+    color: aliceblue;
+    left: 50%;
+    position: absolute;
+    top: 40%;
+    font-weight: bolder;
+    transform: translate(-50%, 50%);
+}
+.more{
+    border: 1px solid rgb(134, 134, 134);
+    padding: 10px 90px;
+    color: aliceblue;
+    left: 50%;
+    position: absolute;
+    top: 50%;
+    font-weight: bolder;
+    transform: translate(-50%, 50%);
+    text-decoration: none;
+    transition: all 1s ease-in;
+}
+.more:hover{
+    background-color: rgb(0, 0, 71);
+    transition: all 1s ease-in;
+}
+.container{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 10px;
+    margin-top: 30px;
+    width: 80%;
+    margin-left: 150px;
+}
+.card{
+    text-align: center;
+border: 1px solid rgb(218, 215, 215);
+transition: 2s;
+
+}
+.card:hover{
+    background-color: rgb(0, 0, 85);
+    color: white;
+    transition: 2s;
+}
+.card a{
+    padding: 10px 30px;
+    display: block;
+    background-color: rgb(80, 80, 80);
+    color: aliceblue;
+    text-decoration: none;
+}
+.card:hover a{
+    background-color: rgb(79, 0, 95);
+    transition: 2s;
+   
+}
+.card img{
+    width: 400px;
+    height: 500px;
+}
